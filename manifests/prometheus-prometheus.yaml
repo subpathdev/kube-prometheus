@@ -17,10 +17,6 @@ spec:
   podMonitorNamespaceSelector: {}
   podMonitorSelector: {}
   replicas: 2
-  remoteWrite:
-  - url: "http://influx-schuette-influxdb.default.svc.cluster.local:8086/api/v1/prom/write?db=monitoring"
-  remoteRead:
-  - url: "http://influx-schuette-influxdb.default.svc.cluster.local:8086/api/v1/prom/read?db=monitoring"
   resources:
     requests:
       memory: 400Mi
